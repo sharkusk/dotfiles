@@ -15,3 +15,8 @@ vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste (keep buffer)" })
 
 -- exit insert mode by pressing jk
 vim.keymap.set("i", "jk", "<esc>", { desc = "Exit Insert Mode" })
+
+vim.keymap.set("n", "<C-h>", [[<cmd>lua require('tmux').move_left()<cr>]])
+vim.keymap.set("n", "<C-j>", [[<cmd>lua require('tmux').move_down()<cr>]])
+vim.keymap.set("n", "<C-k>", [[<cmd>lua require('tmux').move_up()<cr>]])
+vim.keymap.set("n", "<C-l>", [[<cmd>lua require('tmux').move_right()<cr>]])

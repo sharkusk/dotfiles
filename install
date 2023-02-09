@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-STOW_FOLDERS="config"
+STOW_FOLDERS="config,tmux"
 
 DOT_FILES=$HOME/dotfiles
 
