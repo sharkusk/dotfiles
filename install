@@ -1,9 +1,11 @@
 #!/usr/bin/env zsh
 
-DOT_FILES=$HOME/dotfiles
+# Get directory of this script
+DOT_FILES=${0:a:h}
 
 pushd $DOT_FILES
 
+# Remove trailing '/' from directories
 STOW_FOLDERS=`ls -d */ | sed "s/\///g"`
 
 for folder in $(echo $STOW_FOLDERS)
