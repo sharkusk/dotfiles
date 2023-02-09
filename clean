@@ -8,7 +8,7 @@ STOW_FOLDERS=`ls -d */ | sed "s/\///g"`
 
 for folder in $(echo $STOW_FOLDERS)
 do
-	stow --verbose --target=$HOME --restow $folder
+	stow --verbose --target=$HOME --delete $folder
 done
 
 popd
