@@ -1,7 +1,7 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-add_newline = false
+add_newline = true
 format = '${custom.bash}${custom.fish}$all'
 
 # Indicates when in bash shell.
