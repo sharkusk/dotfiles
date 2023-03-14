@@ -140,6 +140,8 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+export $(envsubst < $HOME/.env)
+
 eval "$(zoxide init bash --cmd cd)"
 eval "$(starship init bash)"
 
