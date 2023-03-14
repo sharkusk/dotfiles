@@ -1,1 +1,1 @@
-git base-devel neovim stow zsh pipewire wireplumber exa bat lazygit btop gtop ripgrep fd nodejs npm ttf-nerd-fonts-symbols-2048-em bluez bluez-utils tree
+git base-devel neovim stow zsh exa bat lazygit btop gtop ripgrep fd nodejs npm ttf-nerd-fonts-symbols-2048-em ncdu rclone rsync rmlint ntfy entr mc hzf zoxide ranger starship
