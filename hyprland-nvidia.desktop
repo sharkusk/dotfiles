@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Hyprland (Nvidia)
+Comment=An intelligent dynamic tiling Wayland compositor
+Exec=env LIBVA_DRIVER_NAME=nvidia XDG_SESSION_TYPE=wayland GBM_BACKEND=nvidia-drm __GLX_VENDOR_LIBRARY_NAME=nvidia NVD_BACKEND=direct WLR_BACKEND=vulkan Hyprland -c /home/marcusk/.config/hypr/hyprland.nvidia.conf
+Type=Application
