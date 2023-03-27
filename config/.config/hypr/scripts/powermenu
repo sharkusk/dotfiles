@@ -4,6 +4,7 @@
 CONFIG="$HOME/.config/hypr/wofi/config"
 STYLE="$HOME/.config/hypr/wofi/style.css"
 COLORS="$HOME/.config/hypr/wofi/colors"
+SCRIPTS_DIR="$HOME/.config/hypr/scripts"
 
 ## Wofi Command
 wofi_command="wofi --show dmenu \
@@ -50,14 +51,14 @@ open_menu() {
     fi
     ;;
   $lock)
-    ~/.config/hypr/scripts/lockscreen
+    $SCRIPTS_DIR/lockscreen
     ;;
   $suspend)
     cdialog
     if [[ "$?" == 0 ]]; then
       # mpc -q pause
       pamixer -m
-      ~/.config/hypr/scripts/lockscreen
+      $SCRIPTS_DIR/lockscreen
       systemctl suspend
     else
       exit
