@@ -1,2 +1,2 @@
 #/bin/bash
-yay -S $(cat system-packages.txt | tr '\n' ' ')
+yay -S --needed $(cat system-packages.txt | tr '\n' ' ')

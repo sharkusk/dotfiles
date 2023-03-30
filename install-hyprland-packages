@@ -1,2 +1,2 @@
 #/bin/bash
-yay -S $(cat hyprland-packages.txt | tr '\n' ' ')
+yay -S --needed $(cat hyprland-packages.txt | tr '\n' ' ')
