@@ -19,7 +19,6 @@ if machine == "aarch64" then
       servers = {
         clangd = { mason = false },
       },
-      autoformat = false,
     },
   }
 elseif sys == "Darwin" then
@@ -31,7 +30,6 @@ elseif sys == "Darwin" then
       servers = {
         jsonls = { mason = false },
       },
-      autoformat = false,
     },
   }
 else
@@ -39,7 +37,6 @@ else
     "neovim/nvim-lspconfig",
     ---@class PluginLspOpts
     opts = {
-      autoformat = false,
     },
   }
 end
